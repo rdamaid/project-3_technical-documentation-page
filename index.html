@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Python Introduction Documentation</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Python Introduction Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#Numbers">Numbers</a></li>
+        <li><a class="nav-link" href="#Strings">Strings</a></li>
+        <li><a class="nav-link" href="#Lists">Lists</a></li>
+        <li><a class="nav-link" href="#First_Steps_Toward_Programming">First Steps Toward Programming</a></li>
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>In the following examples, input and output are distinguished by the presence or absence of prompts (>>> and …): to repeat the example, you must type everything after the prompt, when the prompt appears; lines that do not begin with a prompt are output from the interpreter. Note that a secondary prompt on a line by itself in an example means you must type a blank line; this is used to end a multi-line command.</p>
+        <p>You can toggle the display of prompts and output by clicking on >>> in the upper-right corner of an example box. If you hide the prompts and output for an example, then you can easily copy and paste the input lines into your interpreter.</p>
+        <p>Many of the examples in this manual, even those entered at the interactive prompt, include comments. Comments in Python start with the hash character, #, and extend to the end of the physical line. A comment may appear at the start of a line or following whitespace or code, but not within a string literal. A hash character within a string literal is just a hash character. Since comments are to clarify code and are not interpreted by Python, they may be omitted when typing in examples.</p>
+        <p>Some examples:</p>
+        <code># this is the first comment <br/> spam = 1  &nbsp# and this is the second comment <br/> &nbsp &nbsp &nbsp &nbsp &nbsp # ... and now a third! <br/> text = "# This is not a comment because it's inside quotes."</code>
+      </section>
+      <section class="main-section" id="Numbers">
+        <header>Numbers</header>
+        <p>Let’s try some simple Python commands. Start the interpreter and wait for the primary prompt, >>>. (It shouldn’t take long.)</p>
+        <p>The interpreter acts as a simple calculator: you can type an expression at it and it will write the value. Expression syntax is straightforward: the operators +, -, * and / work just like in most other languages (for example, Pascal or C); parentheses (()) can be used for grouping. For example:</p>
+        <code>>>> 2 + 2 <br/> 4 <br/>
+>>> 50 - 5*6 <br/> 20 <br/>
+>>> (50 - 5*6) / 4 <br/> 5.0 <br/>
+>>> 8 / 5  # division always returns a floating point number <br/>
+1.6</code>
+        <p>Examples of python operators are as follows:</p>
+        <ul>
+          <li>Addition (+)</li>
+          <li>Subtraction (-)</li>
+          <li>Multiplication (*)</li>
+          <li>Division (/)</li>
+          <li>Modulo (%)</li>
+        </ul>
+      </section>
+      <section class="main-section" id="Strings">
+        <header>Strings</header>
+        <p>Besides numbers, Python can also manipulate strings, which can be expressed in several ways. They can be enclosed in single quotes ('...') or double quotes ("...") with the same result 2. \ can be used to escape quotes:</p>
+        <code>>>> 'spam eggs'  # single quotes <br/>
+'spam eggs' <br/>
+>>> 'doesn\'t'  # use \' to escape the single quote... <br/>
+"doesn't" <br/>
+>>> "doesn't"  # ...or use double quotes instead <br/>
+"doesn't"</code>
+        <p>The integer numbers (e.g. 2, 4, 20) have type int, the ones with a fractional part (e.g. 5.0, 1.6) have type float.</p>
+      </section>
+      <section class="main-section" id="Lists">
+        <header>Lists</header>
+        <p>Python knows a number of compound data types, used to group together other values. The most versatile is the list, which can be written as a list of comma-separated values (items) between square brackets. Lists might contain items of different types, but usually the items all have the same type.</p>
+        <code>>>> squares = [1, 4, 9, 16, 25] <br/>
+>>> squares <br/>
+[1, 4, 9, 16, 25]</code>
+      </section>
+      <section class="main-section" id="First_Steps_Toward_Programming">
+        <header>First Steps Toward Programming</header>
+        <p>Of course, we can use Python for more complicated tasks than adding two and two together. For instance, we can write an initial sub-sequence of the Fibonacci series as follows:</p>
+        <code>>>> # Fibonacci series: <br/>
+... # the sum of two elements defines the next <br/>
+... a, b = 0, 1 <br/>
+>>> while a < 10: <br/>
+... &nbsp &nbsp print(a) <br/>
+... &nbsp &nbsp a, b = b, a+b <br/>
+... <br/>
+0 <br/>
+1 <br/>
+1 <br/>
+2 <br/>
+3 <br/>
+5 <br/>
+8</code>
+      </section>
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <p>All the documentation in this page is taken from
+              <a
+                href="https://docs.python.org/3/tutorial/introduction.html#first-steps-towards-programming"
+                target="_blank"
+                >python.org</a
+              ></p>
+      </section>
+    </main>
+  </body>
+</html>
